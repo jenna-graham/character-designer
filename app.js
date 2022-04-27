@@ -46,12 +46,13 @@ middleDropdown.addEventListener('change', () => {
 
 bottomDropdown.addEventListener('change', () => {
     // get the value of the bottom dropdown
-
+    console.log('changing bottom selection');
     // increment the bottom change count state
-    
+    bottomCount++;
     // update the dom for the bottom (NOTE use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
-
+    bottomEl.style.backgroundImage = `url('./assets/${bottomDropdown.value}.png')`;
     // update the stats to show the new count (call displayStats() to do this work)
+    displayStats();
 });
 
 
@@ -68,7 +69,7 @@ catchphraseButton.addEventListener('click', () => {
 
 function displayStats() {
     // text content of the reportEl to tell the user how many times they've changed each piece of the state
-    reportEl.textContent = `You have changed the head ${headCount} times and the middle ${middleCount} times.`;
+    reportEl.textContent = `You have changed the head ${headCount} times, the middle ${middleCount} times and the bottom ${bottomCount} times.`;
 }
 
 function displayCatchphrases() {
