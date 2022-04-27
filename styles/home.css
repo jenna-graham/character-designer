@@ -1,1 +1,8 @@
 /* add home page styles here */
+#head {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/bird-head.png');
+}
+
+
