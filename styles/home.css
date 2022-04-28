@@ -13,3 +13,9 @@
     background-image: url('../assets/blue-pants.png');
 }
 
+#catchphrases {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-items: flex-end;
+}
