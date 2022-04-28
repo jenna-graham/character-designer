@@ -1,1 +1,21 @@
-/* add home page styles here */
+/* add home page styles here */ 
+#head {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/bird-head.png');
+}
+#middle {
+    background-image: url('../assets/blue-middle.png');
+
+}
+
+#bottom {
+    background-image: url('../assets/blue-pants.png');
+}
+
+#catchphrases {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-items: flex-end;
+}
